@@ -20,7 +20,7 @@ http.createServer(function(request, response){
 			response.write(`
 				<html>
 					<head>
-						<title>First app</title>
+						<title>okelite.js | node.js</title>
 					</head>
 					<body>
 						<br>
