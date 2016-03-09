@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Bhaskar Goyal",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.10.2"
+  }
 }
