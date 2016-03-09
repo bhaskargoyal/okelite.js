@@ -1,0 +1,12 @@
+{
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "This is my first node.js app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Bhaskar Goyal",
+  "license": "ISC"
+}
