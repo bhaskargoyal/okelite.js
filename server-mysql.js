@@ -11,33 +11,19 @@ MongoClient.connect(url,function(err, db) {
 	db.close();
 });
 */
-var port = Number(process.env.PORT) || 3000;
+
 http.createServer(function(request, response){
 	
 	connectToDb('SELECT * from users', function(err, data) {
 		if(!err){
-			response.writeHead(200, {"Content-Type": "text/html"});
-			response.write(`
-				<html>
-					<head>
-						<title>First app</title>
-					</head>
-					<body>
-						<br>
-						<center><h1>Here is some data!</h1></center>
-						<center><h3>The site is hosted on Heroku</h3></center>
-						<center><h3>It uses PostgreSQL and database on aws servers.</h3></center>
-						<center><b>${data}</b></center>
-
-					</body>
-				</html>
-				`);
-			response.end();
+			response.writeHead(200, {"Content-Type": "text/plain"});
+			response.write("this is my first node js http server");
+			response.end(" \nhello\n" +data);
 		} else {
 			response.writeHead(200, {"Content-Type": "text/html"});
 			response.write(`
 				<html>
-				can't load data<br>
+				can't load data
 				${err}
 				</html>
 			`);
