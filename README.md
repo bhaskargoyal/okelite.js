@@ -30,7 +30,6 @@ Follow these steps to get your code running <br>
       callback('', data);
     });
   }</pre>
- <li></li>
  <li>To execute a query, write (where {{sql}} would be your query) </li>
  <li>Your code should be up and running.</li>
 </ul>
